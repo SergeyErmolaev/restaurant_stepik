@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid;/*Удалить*/
+}
+
+.logo-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+border: 1px solid;/*Удалить*/
+}
+ header .row {
+   align-items: center;
+   border: 1px solid;
+ }
+
+.btn {
+  padding: 14px 20px;
+  border: 1px solid #E0E0E0;
+}
+
+.basket {
+  padding-left: 15px;
+}
