@@ -1,27 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.container {
-  border: 1px solid;/*Удалить*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+
+p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+/*.wrapper {
+  max-width: 1124px;
+  padding: 0 87px 0 81px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}*/
+
+header {
+  /*border: 1px solid;*/
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main {
+  padding-top: 72px;
 }
 
 .logo-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
-border: 1px solid;/*Удалить*/
+
 }
+.logo-wrapper a {
+  display: block;
+  height: 12px;
+}
+
  header .row {
    align-items: center;
-   border: 1px solid;
+
  }
 
-.btn {
+.col-nested_btn {
+  justify-content: flex-end;
+
+}
+
+.box-nested .btn {
+  /*display: inline-block;*/
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1d1d1d;
   padding: 14px 20px;
   border: 1px solid #E0E0E0;
 }
 
 .basket {
-  padding-left: 15px;
+  padding-left: 11px;
 }
+
+/*HEADER закончился*/
+
+/*Поле поиска*/
+
+.input-wrapper {
+
+  margin: 55px auto 55px auto;
+  position: relative;
+}
+
+.input-wrapper::after {
+  content: attr(data-text);
+  font-size: 1rem;
+  line-height: 0;
+  height: 0;
+  max-width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  border-bottom: 2px solid #000000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  overflow: hidden;
+  user-select: none;
+  color: transparent;
+}
+
+input {
+  color: #626262;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  outline: none;
+  width: auto;
+  min-width: 100%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.5);
+  background-color: transparent;
+}
+
+/*Поле поиска закончилось*/
+
+/*CARDS*/
+
+  .card-group h2 {
+    padding-top: 16px;
+  }
+
+  .card-group h3 {
+    padding-top: 4px;
+  }
+
+  .card-group p {
+    padding-top: 4px;
+    padding-bottom: 20px;
+  }
+
+  /*.box .card {
+    width: 308px;
+    height: 366px;
+  }
+
+  .card-body h2 {
+    display: block;
+  }*/
+
+  /*.card a {
+    display: block;
+    min-height: 256px;
+  }
+
+  .macdonalds-card a {
+    background: url('../img/Macdonalds.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .card-group:nth-child(2) a {
+    background: url('../img/DimSum.jpg') no-repeat;
+    background-size: cover;
+  }*/
+
+  .card {
+    display: block;
+    min-height: 256px;
+  }
+
+  li {
+    list-style-type: none;
+
+    margin-bottom: 16px;
+  }
+li:nth-child(1) .card {
+    background: url('../img/Macdonalds.jpg') no-repeat;
+    background-size: cover;
+  }
+
+li:nth-child(2) .card {
+  background: url('../img/DimSum.jpg') no-repeat;
+  background-size: cover;
+}
+
+li:nth-child(3) .card {
+  background: url('../img/Dvijok.jpg') no-repeat;
+  background-size: cover;
+}
+
+li:nth-child(4) .card {
+  background: url('../img/NJA.png') no-repeat;
+  background-size: cover;
+}
+
+li:nth-child(5) .card {
+  background: url('../img/Tochkadzi.png') no-repeat;
+  background-size: cover;
+}
+
+li:nth-child(6) .card {
+  background: url('../img/Cinnabon.png') no-repeat;
+  background-size: cover;
+}
+
+li:nth-child(7) .card {
+  background: url('../img/pezzelove.jpg') no-repeat;
+  background-size: cover;
+}
+
+li:nth-child(7) h2 {
+  text-transform: uppercase;
+}
+
+li:nth-child(8) .card {
+  background: url('../img/zu.jpg') no-repeat;
+  background-size: cover;
+}
+
+li:nth-child(9) .card {
+  background: url('../img/bqcage.jpg') no-repeat;
+  background-size: cover;
+}
+
+.card-items_container {
+  padding-bottom: 64px;
+}
+/*CARDS закончились*/
