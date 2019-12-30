@@ -1,0 +1,18 @@
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.scroll-top:before {
+    content: "\f176";
+    font-family: FontAwesome;
+    color: white;
+    font-size: 20px;
+    line-height: 36px;

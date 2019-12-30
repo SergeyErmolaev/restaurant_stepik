@@ -258,6 +258,9 @@ a:active {
 footer {
   background-color: #262626;
   padding-top: 56px;
+  font-size:13px;
+  line-height: 15px;
+  color: #ffffff;
 }
 
 footer .container > .row {
@@ -266,7 +269,9 @@ footer .container > .row {
   margin-bottom: 32px;
 }
 
-
+footer .container > .row:last-child {
+  margin-bottom: 0;
+}
 
 select {
       -webkit-appearance: none;
@@ -285,5 +290,89 @@ select {
 select::-ms-expand {
   		display: none;
 	}
+
+.social h6 {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding-top:33px;
+  padding-bottom:17px;
+}
+
+.social h6 span {
+  color: #49a144;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social-icons li {
+  width:24px;
+  height:24px;
+  margin-bottom:32px;
+}
+
+.social-icons li:nth-child(1) {
+  background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.social-icons li:nth-child(2) {
+  background: url('../img/css_sprites.png') -10px -54px;
+}
+
+.social-icons li:nth-child(3) {
+  background: url('../img/css_sprites.png') -54px -10px;
+}
+
+.partnership li, .FAQs li {
+  padding-top: 7px;
+  margin-bottom: 16px;
+}
+
+.partnership a, .FAQs a {
+  color: #ffffff;
+}
+
+.FAQs li:last-child {
+  margin-bottom: 15px;
+}
+
+footer .container > .row:nth-child(2) {
+  padding-bottom:25px;
+}
+
+.appstore {
+  display:flex;
+  justify-content: flex-end;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    width: 80px;
+    height: 80px;
+    background: 50% 50% url('../img/Shape.png') #59BD5A no-repeat;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+/*.scroll-top:before {
+    content: "\f176";
+    font-family: FontAwesome;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+*/
 
 /*END OF FOOTER*/
