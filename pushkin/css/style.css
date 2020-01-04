@@ -98,6 +98,16 @@ header {
 
 /*Navigation*/
 
+.nav-item a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+
+.current a {
+  color: #327430;
+}
+
 .navigation {
   border-bottom: 1px solid rgba(117, 117, 177, 0.2)
 }
@@ -139,13 +149,14 @@ header {
 .card-wrapper > .box-container {
   padding-left: 16px;
   border: 1px solid rgba(117, 117, 117, 0.2);
-
+  border-radius: 2px;
+  margin: 1px;
 }
 
 .photo-container {
   display: flex;
   justify-content: flex-end;
-  margin-right: -1px;
+
 }
 
 .price {
@@ -164,38 +175,38 @@ header {
   height: 160px;
 }
 
-.cards-row div:nth-child(1) .photo {
+.card-wrapper:nth-child(1) .photo {
   /*margin: 0 -8px;*/
   background: url('../img/herring.png') no-repeat;
   background-size: cover;
 }
 
-.cards-row div:nth-child(2) .photo {
+.card-wrapper:nth-child(2) .photo {
   /*margin: 0 -8px;*/
   background: url('../img/pickles.png') no-repeat;
   background-size: cover;
 }
 
-.cards-row div:nth-child(3) .photo {
+.card-wrapper:nth-child(3) .photo {
   /*margin: 0 -8px;*/
   background: url('../img/mushrooms.png') no-repeat;
   background-size: cover;
 }
 
 .cards-row div:nth-child(4) .photo {
-  margin: 0 -8px;
+  /*margin: 0 -8px;*/
   background: url('../img/fat.png') no-repeat;
   background-size: cover;
 }
 
 .cards-row div:nth-child(5) .photo {
-  margin: 0 -8px;
+  /*margin: 0 -8px;*/
   background: url('../img/salmon.png') no-repeat;
   background-size: cover;
 }
 
 .cards-row div:nth-child(6) .photo {
-  margin: 0 -8px;
+  /*margin: 0 -8px;*/
   background: url('../img/tongue.png') no-repeat;
   background-size: cover;
 }
@@ -220,6 +231,7 @@ header {
     padding-bottom:38px;
     padding-left: 38px;
     padding-right: 29px;
+    box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
   }
 
   .banner-row h1 {
@@ -256,11 +268,15 @@ header {
   .card-wrapper {
     margin-bottom: 49px;
   }
+
+  .main {
+    padding-bottom: 31px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .logo-wrapper {
-    margin-left: -16px;
+    /*margin-left: -16px;*/
   }
 
   .hero {
@@ -277,7 +293,7 @@ header {
     padding-bottom:38px;
     padding-left: 40px;
     padding-right: 52px;
-    margin-left: -8px;
+    box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
   }
 
   .banner-row h1 {
@@ -313,15 +329,19 @@ header {
 
   /*отступ для навигации в md*/
   .navigation-list .nav-item:first-child {
-    margin-left: -8px;
+    /*margin-left: -8px;*/
   }
 
-  .card-wrapper {
+  /*.card-wrapper {
     margin: 0 -16px;
-  }
+  }*/
 
   .card-wrapper {
     margin-bottom: 32px;
+  }
+
+  .main {
+    padding-bottom: 16px;
   }
 }
 
@@ -342,6 +362,7 @@ header {
     padding-bottom:24px;
     padding-left: 41px;
     padding-right: 41px;
+    box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
   }
 
   .banner-row h1 {
@@ -381,9 +402,185 @@ header {
     vertical-align: middle;
   }
 
+  .cards-group h2 {
+    padding-top:111px;
+    padding-bottom:12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    line-height:34px;
+    color:#1d1d1d;
+  }
+
+  .line {
+    margin: 0 auto;
+    width: 50px;
+    border-bottom: 1px solid #757575;
+    margin-bottom: 43px;
+  }
+
+  .cards-group h3 {
+    padding-top: 0px;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .relish + .price {
+    margin-top: 16px;
+  }
+
+  .card-wrapper {
+    margin-bottom: 16px;
+  }
+  .card-wrapper > .box-container {
+    padding-left: 0px;
+    border: none;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+
+  }
+
   .photo {
     height: 102px;
+  }
+
+  .main {
+    padding-bottom: 24px;
   }
 }
 
 /*HERO ended*/
+
+/*FOOTER*/
+
+footer {
+  background-color: #262626;
+  padding-top: 56px;
+  font-size:13px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+/*footer paddings, margins*/
+
+footer .container > .row {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 32px;
+}
+
+footer .container > .row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  border: none;
+}
+
+footer .container > .row:nth-child(2) {
+  padding-bottom:25px;
+}
+
+footer .container > .row:last-child div:nth-child(1), footer .container > .row:last-child div:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+select {
+      -webkit-appearance: none;
+	    -moz-appearance: none;
+	    -ms-appearance: none;
+	    appearance: none!important;
+      width: 100%;
+      height: 40px;
+      padding: 0 0 0 48px;
+      color: #ffffff;
+      background: 16px 50% url(../img/world.png) no-repeat, right 16px top 50% url(../img/arrow.png) no-repeat, #3b3b3b;
+      border: none;
+
+}
+
+select::-ms-expand {
+  		display: none;
+	}
+
+.social h6 {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding-top:33px;
+  padding-bottom:17px;
+}
+
+.social h6 span {
+  color: #49a144;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social-icons li {
+  width:24px;
+  height:24px;
+  margin-bottom:32px;
+}
+
+.social-icons li:nth-child(1) {
+  background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.social-icons li:nth-child(2) {
+  background: url('../img/css_sprites.png') -10px -54px;
+}
+
+.social-icons li:nth-child(3) {
+  background: url('../img/css_sprites.png') -54px -10px;
+}
+
+.partnership li, .FAQs li {
+  padding-top: 7px;
+  margin-bottom: 16px;
+}
+
+.partnership a, .FAQs a {
+  color: #ffffff;
+}
+
+.FAQs li:last-child {
+  margin-bottom: 15px;
+}
+
+.appstore {
+  display:flex;
+  justify-content: flex-end;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    width: 80px;
+    height: 80px;
+    background: 50% 50% url('../img/Shape.png') #59BD5A no-repeat;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+/*.scroll-top:before {
+    content: "\f176";
+    font-family: FontAwesome;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+*/
+
+/*END OF FOOTER*/
