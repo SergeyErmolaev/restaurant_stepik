@@ -37,6 +37,10 @@ p {
   color: #1d1d1d;
 }
 
+li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
