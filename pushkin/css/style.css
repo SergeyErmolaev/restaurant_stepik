@@ -336,6 +336,11 @@ header {
     margin: 0 -16px;
   }*/
 
+  .photo {
+    width: 200px;
+    height: 160px;
+  }
+
   .card-wrapper {
     margin-bottom: 32px;
   }
@@ -426,6 +431,10 @@ header {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .price {
+    margin-top: 41px;
   }
 
   .relish + .price {
